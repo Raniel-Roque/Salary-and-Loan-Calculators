@@ -36,6 +36,12 @@
         Dim result As DialogResult = MessageBox.Show("Are you sure details given are correct?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
 
         If result = DialogResult.Yes Then
+            GlobalData.Name = NameBox.Text
+            GlobalData.Dept = DeptBox.Text
+            GlobalData.WHours = WHBox.Text
+            GlobalData.RegRate = RegRateBox.Text
+            GlobalData.OverTime = OverBox.Text
+            GlobalData.OverRate = OverRateBox.Text
             If SalCalcOut_Form Is Nothing Then
                 SalCalcOut_Form = New SalCalcOut
             End If
