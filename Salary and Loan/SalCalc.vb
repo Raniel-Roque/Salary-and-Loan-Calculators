@@ -3,7 +3,11 @@
     'Date: September 16 2023
     'BSIT 2A
     Dim Choose_Financial_Form As Choose_Financial
-    Private Sub HomeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HomeToolStripMenuItem.Click
+    Private Sub SalCalc_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub HomeToolStripMenuItem_Click_1(sender As Object, e As EventArgs) Handles HomeToolStripMenuItem.Click
         ' Confirmation dialog
         ' Placeholder for Compilation Project
         Dim result As DialogResult = MessageBox.Show("Are you sure you want to go back to main menu?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
@@ -15,9 +19,5 @@
             Choose_Financial_Form.Show()
             Me.Close()
         End If
-    End Sub
-
-    Private Sub SalCalc_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
     End Sub
 End Class

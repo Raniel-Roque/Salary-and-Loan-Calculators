@@ -124,6 +124,12 @@
     <Compile Include="SalCalc.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="SalCalcOut.Designer.vb">
+      <DependentUpon>SalCalcOut.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SalCalcOut.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Choose_Financial.resx">
@@ -146,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SalCalc.resx">
       <DependentUpon>SalCalc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalCalcOut.resx">
+      <DependentUpon>SalCalcOut.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
