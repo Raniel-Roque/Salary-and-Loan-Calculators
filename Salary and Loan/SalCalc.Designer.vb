@@ -37,7 +37,7 @@ Partial Class SalCalc
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.OverRateBox1 = New System.Windows.Forms.TextBox()
+        Me.OverRateBox = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -204,15 +204,15 @@ Partial Class SalCalc
         Me.Label1.TabIndex = 21
         Me.Label1.Text = "Name:"
         '
-        'OverRateBox1
+        'OverRateBox
         '
-        Me.OverRateBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.OverRateBox1.Font = New System.Drawing.Font("Arial", 14.0!)
-        Me.OverRateBox1.Location = New System.Drawing.Point(168, 194)
-        Me.OverRateBox1.Margin = New System.Windows.Forms.Padding(3, 3, 3, 5)
-        Me.OverRateBox1.Name = "OverRateBox1"
-        Me.OverRateBox1.Size = New System.Drawing.Size(202, 22)
-        Me.OverRateBox1.TabIndex = 6
+        Me.OverRateBox.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.OverRateBox.Font = New System.Drawing.Font("Arial", 14.0!)
+        Me.OverRateBox.Location = New System.Drawing.Point(168, 194)
+        Me.OverRateBox.Margin = New System.Windows.Forms.Padding(3, 3, 3, 5)
+        Me.OverRateBox.Name = "OverRateBox"
+        Me.OverRateBox.Size = New System.Drawing.Size(202, 22)
+        Me.OverRateBox.TabIndex = 6
         '
         'Label6
         '
@@ -231,7 +231,7 @@ Partial Class SalCalc
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(2, Byte), Integer), CType(CType(170, Byte), Integer), CType(CType(86, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(384, 287)
-        Me.Controls.Add(Me.OverRateBox1)
+        Me.Controls.Add(Me.OverRateBox)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Compute)
         Me.Controls.Add(Me.Clear)
@@ -272,6 +272,6 @@ Partial Class SalCalc
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents OverRateBox1 As TextBox
+    Friend WithEvents OverRateBox As TextBox
     Friend WithEvents Label6 As Label
 End Class
