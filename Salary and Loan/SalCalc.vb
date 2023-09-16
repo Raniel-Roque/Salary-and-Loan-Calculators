@@ -33,7 +33,6 @@
 
     Private Sub Compute_Click(sender As Object, e As EventArgs) Handles Compute.Click
         ' Confirmation dialog
-
         Dim result As DialogResult = MessageBox.Show("Are you sure details given are correct?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
 
         If result = DialogResult.Yes Then

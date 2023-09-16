@@ -7,8 +7,4 @@
         OverBox.Text = GlobalData.OverTime
         OverRateBox.Text = GlobalData.OverRate
     End Sub
-
-    Private Sub Compute_Click(sender As Object, e As EventArgs) Handles Compute.Click
-
-    End Sub
 End Class
