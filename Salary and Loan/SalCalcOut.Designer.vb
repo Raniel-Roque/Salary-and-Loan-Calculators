@@ -24,9 +24,9 @@ Partial Class SalCalcOut
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SalCalcOut))
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.HomeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OverRateBox = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.Clear = New System.Windows.Forms.Button()
         Me.OverBox = New System.Windows.Forms.TextBox()
         Me.RegRateBox = New System.Windows.Forms.TextBox()
         Me.WHBox = New System.Windows.Forms.TextBox()
@@ -37,9 +37,12 @@ Partial Class SalCalcOut
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Compute = New System.Windows.Forms.Button()
+        Me.NextButt = New System.Windows.Forms.Button()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.HomeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FView = New System.Windows.Forms.Button()
+        Me.NewForm = New System.Windows.Forms.Button()
+        Me.GSalaryBox = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -51,9 +54,20 @@ Partial Class SalCalcOut
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(6)
-        Me.MenuStrip1.Size = New System.Drawing.Size(389, 32)
+        Me.MenuStrip1.Size = New System.Drawing.Size(387, 32)
         Me.MenuStrip1.TabIndex = 2
         Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'HomeToolStripMenuItem
+        '
+        Me.HomeToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.HomeToolStripMenuItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.HomeToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.HomeToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.HomeToolStripMenuItem.Image = CType(resources.GetObject("HomeToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.HomeToolStripMenuItem.Name = "HomeToolStripMenuItem"
+        Me.HomeToolStripMenuItem.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(28, 20)
         '
         'OverRateBox
         '
@@ -76,22 +90,6 @@ Partial Class SalCalcOut
         Me.Label6.Size = New System.Drawing.Size(137, 22)
         Me.Label6.TabIndex = 48
         Me.Label6.Text = "Overtime Rate:"
-        '
-        'Clear
-        '
-        Me.Clear.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Clear.FlatAppearance.BorderColor = System.Drawing.Color.Black
-        Me.Clear.FlatAppearance.BorderSize = 2
-        Me.Clear.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Clear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Clear.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Clear.Location = New System.Drawing.Point(16, 273)
-        Me.Clear.Name = "Clear"
-        Me.Clear.Size = New System.Drawing.Size(148, 36)
-        Me.Clear.TabIndex = 47
-        Me.Clear.Text = "Clear"
-        Me.Clear.UseVisualStyleBackColor = False
         '
         'OverBox
         '
@@ -205,55 +203,104 @@ Partial Class SalCalcOut
         Me.Label1.TabIndex = 42
         Me.Label1.Text = "Name:"
         '
-        'Compute
+        'NextButt
         '
-        Me.Compute.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Compute.FlatAppearance.BorderColor = System.Drawing.Color.Black
-        Me.Compute.FlatAppearance.BorderSize = 2
-        Me.Compute.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Compute.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Compute.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Compute.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Compute.Location = New System.Drawing.Point(168, 273)
-        Me.Compute.Name = "Compute"
-        Me.Compute.Size = New System.Drawing.Size(202, 36)
-        Me.Compute.TabIndex = 49
-        Me.Compute.Text = "Compute"
-        Me.Compute.UseVisualStyleBackColor = False
+        Me.NextButt.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.NextButt.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.NextButt.FlatAppearance.BorderSize = 2
+        Me.NextButt.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.NextButt.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.NextButt.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.NextButt.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NextButt.Location = New System.Drawing.Point(276, 296)
+        Me.NextButt.Name = "NextButt"
+        Me.NextButt.Size = New System.Drawing.Size(94, 36)
+        Me.NextButt.TabIndex = 49
+        Me.NextButt.Text = "Next"
+        Me.NextButt.UseVisualStyleBackColor = False
         '
         'Label12
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Arial", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(85, 41)
+        Me.Label12.Location = New System.Drawing.Point(10, 41)
         Me.Label12.Margin = New System.Windows.Forms.Padding(3, 3, 3, 5)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(243, 32)
         Me.Label12.TabIndex = 50
         Me.Label12.Text = "SALARY DETAILS"
         '
-        'HomeToolStripMenuItem
+        'FView
         '
-        Me.HomeToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
-        Me.HomeToolStripMenuItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.HomeToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.HomeToolStripMenuItem.ForeColor = System.Drawing.Color.White
-        Me.HomeToolStripMenuItem.Image = CType(resources.GetObject("HomeToolStripMenuItem.Image"), System.Drawing.Image)
-        Me.HomeToolStripMenuItem.Name = "HomeToolStripMenuItem"
-        Me.HomeToolStripMenuItem.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(28, 20)
+        Me.FView.BackColor = System.Drawing.Color.PeachPuff
+        Me.FView.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.FView.FlatAppearance.BorderSize = 2
+        Me.FView.FlatAppearance.MouseDownBackColor = System.Drawing.Color.PeachPuff
+        Me.FView.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Linen
+        Me.FView.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.FView.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FView.Location = New System.Drawing.Point(119, 296)
+        Me.FView.Name = "FView"
+        Me.FView.Size = New System.Drawing.Size(151, 36)
+        Me.FView.TabIndex = 68
+        Me.FView.Text = "Full View"
+        Me.FView.UseVisualStyleBackColor = False
+        '
+        'NewForm
+        '
+        Me.NewForm.BackColor = System.Drawing.Color.FromArgb(CType(CType(139, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.NewForm.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.NewForm.FlatAppearance.BorderSize = 2
+        Me.NewForm.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(139, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.NewForm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(139, Byte), Integer), CType(CType(179, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.NewForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.NewForm.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NewForm.Location = New System.Drawing.Point(19, 296)
+        Me.NewForm.Name = "NewForm"
+        Me.NewForm.Size = New System.Drawing.Size(94, 36)
+        Me.NewForm.TabIndex = 75
+        Me.NewForm.Text = "New"
+        Me.NewForm.UseVisualStyleBackColor = False
+        '
+        'GSalaryBox
+        '
+        Me.GSalaryBox.BackColor = System.Drawing.SystemColors.Control
+        Me.GSalaryBox.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.GSalaryBox.Font = New System.Drawing.Font("Arial", 14.0!)
+        Me.GSalaryBox.ForeColor = System.Drawing.Color.DarkGreen
+        Me.GSalaryBox.Location = New System.Drawing.Point(168, 261)
+        Me.GSalaryBox.Margin = New System.Windows.Forms.Padding(3, 3, 3, 5)
+        Me.GSalaryBox.Name = "GSalaryBox"
+        Me.GSalaryBox.ReadOnly = True
+        Me.GSalaryBox.Size = New System.Drawing.Size(202, 22)
+        Me.GSalaryBox.TabIndex = 0
+        Me.GSalaryBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(38, 261)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(3, 3, 3, 5)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(124, 22)
+        Me.Label7.TabIndex = 77
+        Me.Label7.Text = "Gross Salary:"
         '
         'SalCalcOut
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(2, Byte), Integer), CType(CType(170, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(389, 326)
+        Me.ClientSize = New System.Drawing.Size(387, 341)
+        Me.Controls.Add(Me.GSalaryBox)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.NewForm)
+        Me.Controls.Add(Me.FView)
         Me.Controls.Add(Me.Label12)
-        Me.Controls.Add(Me.Compute)
+        Me.Controls.Add(Me.NextButt)
         Me.Controls.Add(Me.OverRateBox)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Clear)
         Me.Controls.Add(Me.OverBox)
         Me.Controls.Add(Me.RegRateBox)
         Me.Controls.Add(Me.WHBox)
@@ -281,7 +328,6 @@ Partial Class SalCalcOut
     Friend WithEvents HomeToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents OverRateBox As TextBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents Clear As Button
     Friend WithEvents OverBox As TextBox
     Friend WithEvents RegRateBox As TextBox
     Friend WithEvents WHBox As TextBox
@@ -292,6 +338,10 @@ Partial Class SalCalcOut
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents Compute As Button
+    Friend WithEvents NextButt As Button
     Friend WithEvents Label12 As Label
+    Friend WithEvents FView As Button
+    Friend WithEvents NewForm As Button
+    Friend WithEvents GSalaryBox As TextBox
+    Friend WithEvents Label7 As Label
 End Class
