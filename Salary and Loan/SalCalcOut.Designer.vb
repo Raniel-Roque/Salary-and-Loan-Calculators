@@ -39,6 +39,7 @@ Partial Class SalCalcOut
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Compute = New System.Windows.Forms.Button()
+        Me.Label12 = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -69,7 +70,7 @@ Partial Class SalCalcOut
         '
         Me.OverRateBox.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.OverRateBox.Font = New System.Drawing.Font("Arial", 14.0!)
-        Me.OverRateBox.Location = New System.Drawing.Point(168, 194)
+        Me.OverRateBox.Location = New System.Drawing.Point(168, 228)
         Me.OverRateBox.Margin = New System.Windows.Forms.Padding(3, 3, 3, 5)
         Me.OverRateBox.Name = "OverRateBox"
         Me.OverRateBox.ReadOnly = True
@@ -80,7 +81,7 @@ Partial Class SalCalcOut
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(27, 194)
+        Me.Label6.Location = New System.Drawing.Point(27, 228)
         Me.Label6.Margin = New System.Windows.Forms.Padding(3, 3, 3, 5)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(137, 22)
@@ -96,7 +97,7 @@ Partial Class SalCalcOut
         Me.Clear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Clear.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Clear.Location = New System.Drawing.Point(16, 320)
+        Me.Clear.Location = New System.Drawing.Point(16, 268)
         Me.Clear.Name = "Clear"
         Me.Clear.Size = New System.Drawing.Size(148, 36)
         Me.Clear.TabIndex = 47
@@ -107,7 +108,7 @@ Partial Class SalCalcOut
         '
         Me.OverBox.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.OverBox.Font = New System.Drawing.Font("Arial", 14.0!)
-        Me.OverBox.Location = New System.Drawing.Point(168, 164)
+        Me.OverBox.Location = New System.Drawing.Point(168, 198)
         Me.OverBox.Margin = New System.Windows.Forms.Padding(3, 3, 3, 5)
         Me.OverBox.Name = "OverBox"
         Me.OverBox.ReadOnly = True
@@ -118,7 +119,7 @@ Partial Class SalCalcOut
         '
         Me.RegRateBox.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.RegRateBox.Font = New System.Drawing.Font("Arial", 14.0!)
-        Me.RegRateBox.Location = New System.Drawing.Point(168, 134)
+        Me.RegRateBox.Location = New System.Drawing.Point(168, 168)
         Me.RegRateBox.Margin = New System.Windows.Forms.Padding(3, 3, 3, 5)
         Me.RegRateBox.Name = "RegRateBox"
         Me.RegRateBox.ReadOnly = True
@@ -129,7 +130,7 @@ Partial Class SalCalcOut
         '
         Me.WHBox.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.WHBox.Font = New System.Drawing.Font("Arial", 14.0!)
-        Me.WHBox.Location = New System.Drawing.Point(168, 104)
+        Me.WHBox.Location = New System.Drawing.Point(168, 138)
         Me.WHBox.Margin = New System.Windows.Forms.Padding(3, 3, 3, 5)
         Me.WHBox.Name = "WHBox"
         Me.WHBox.ReadOnly = True
@@ -141,7 +142,7 @@ Partial Class SalCalcOut
         Me.DeptBox.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DeptBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.DeptBox.Font = New System.Drawing.Font("Arial", 14.0!)
-        Me.DeptBox.Location = New System.Drawing.Point(168, 74)
+        Me.DeptBox.Location = New System.Drawing.Point(168, 108)
         Me.DeptBox.Margin = New System.Windows.Forms.Padding(3, 3, 3, 5)
         Me.DeptBox.Name = "DeptBox"
         Me.DeptBox.ReadOnly = True
@@ -153,7 +154,7 @@ Partial Class SalCalcOut
         Me.NameBox.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.NameBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.NameBox.Font = New System.Drawing.Font("Arial", 14.0!)
-        Me.NameBox.Location = New System.Drawing.Point(168, 44)
+        Me.NameBox.Location = New System.Drawing.Point(168, 78)
         Me.NameBox.Margin = New System.Windows.Forms.Padding(3, 3, 3, 5)
         Me.NameBox.Name = "NameBox"
         Me.NameBox.ReadOnly = True
@@ -164,7 +165,7 @@ Partial Class SalCalcOut
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(72, 164)
+        Me.Label5.Location = New System.Drawing.Point(72, 198)
         Me.Label5.Margin = New System.Windows.Forms.Padding(3, 3, 3, 5)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(92, 22)
@@ -175,7 +176,7 @@ Partial Class SalCalcOut
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(38, 134)
+        Me.Label4.Location = New System.Drawing.Point(38, 168)
         Me.Label4.Margin = New System.Windows.Forms.Padding(3, 3, 3, 5)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(126, 22)
@@ -186,7 +187,7 @@ Partial Class SalCalcOut
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(12, 104)
+        Me.Label3.Location = New System.Drawing.Point(12, 138)
         Me.Label3.Margin = New System.Windows.Forms.Padding(3, 3, 3, 5)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(152, 22)
@@ -197,7 +198,7 @@ Partial Class SalCalcOut
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(50, 74)
+        Me.Label2.Location = New System.Drawing.Point(50, 108)
         Me.Label2.Margin = New System.Windows.Forms.Padding(3, 3, 3, 5)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(114, 22)
@@ -208,7 +209,7 @@ Partial Class SalCalcOut
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(99, 44)
+        Me.Label1.Location = New System.Drawing.Point(99, 78)
         Me.Label1.Margin = New System.Windows.Forms.Padding(3, 3, 3, 5)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(65, 22)
@@ -224,19 +225,31 @@ Partial Class SalCalcOut
         Me.Compute.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Compute.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Compute.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Compute.Location = New System.Drawing.Point(168, 320)
+        Me.Compute.Location = New System.Drawing.Point(168, 268)
         Me.Compute.Name = "Compute"
         Me.Compute.Size = New System.Drawing.Size(202, 36)
         Me.Compute.TabIndex = 49
         Me.Compute.Text = "Compute"
         Me.Compute.UseVisualStyleBackColor = False
         '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Arial", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Location = New System.Drawing.Point(79, 38)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(3, 3, 3, 5)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(243, 32)
+        Me.Label12.TabIndex = 50
+        Me.Label12.Text = "SALARY DETAILS"
+        '
         'SalCalcOut
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(2, Byte), Integer), CType(CType(170, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(389, 368)
+        Me.ClientSize = New System.Drawing.Size(389, 320)
+        Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Compute)
         Me.Controls.Add(Me.OverRateBox)
         Me.Controls.Add(Me.Label6)
@@ -280,4 +293,5 @@ Partial Class SalCalcOut
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Compute As Button
+    Friend WithEvents Label12 As Label
 End Class
