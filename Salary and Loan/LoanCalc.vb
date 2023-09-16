@@ -27,12 +27,22 @@
     End Sub
     'CLEAR
     Private Sub Clear_Click(sender As Object, e As EventArgs) Handles Clear.Click
-        AccBox.Text = ""
-        NameBox.Text = ""
-        AddressBox.Text = ""
-        LoanBox.Text = ""
-        RateBox.Text = ""
-        YearBox.Text = ""
+        Dim result As DialogResult = MessageBox.Show("Are you sure you want to clear data?", "Clear", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
+
+        If result = DialogResult.Yes Then
+            AccBox.Text = ""
+            NameBox.Text = ""
+            AddressBox.Text = ""
+            LoanBox.Text = ""
+            RateBox.Text = ""
+            YearBox.Text = ""
+            Label2.ForeColor = Color.Black
+            Label3.ForeColor = Color.Black
+            Label4.ForeColor = Color.Black
+            Label5.ForeColor = Color.Black
+            Label6.ForeColor = Color.Black
+            Label7.ForeColor = Color.Black
+        End If
     End Sub
     'Checking and Saving data into GlobalData
     Private Sub Compute_Click(sender As Object, e As EventArgs) Handles Compute.Click
@@ -99,18 +109,22 @@
             Return
         End If
 
-        GlobalData.AccNum = AccBox.Text
-        GlobalData.Name = NameBox.Text
-        GlobalData.Address = AddressBox.Text
-        GlobalData.Loan = Double.Parse(LoanBox.Text)
-        GlobalData.Rate = Double.Parse(RateBox.Text)
-        GlobalData.Year = Double.Parse(YearBox.Text)
+        Dim result As DialogResult = MessageBox.Show("Are you sure details given are correct?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
 
-        If Out_Financial_Form Is Nothing Then
-            Out_Financial_Form = New LoanCalcOut
+        If result = DialogResult.Yes Then
+            If Out_Financial_Form Is Nothing Then
+                Out_Financial_Form = New LoanCalcOut
+            End If
+            GlobalData.AccNum = AccBox.Text
+            GlobalData.Name = NameBox.Text
+            GlobalData.Address = AddressBox.Text
+            GlobalData.Loan = Double.Parse(LoanBox.Text)
+            GlobalData.Rate = Double.Parse(RateBox.Text)
+            GlobalData.Year = Double.Parse(YearBox.Text)
+            Out_Financial_Form.Show()
+            Me.Close()
         End If
-        Out_Financial_Form.Show()
-        Me.Close()
+
     End Sub
     'SHORTCUTS
     Private Sub AccBox_KeyDown(sender As Object, e As KeyEventArgs) Handles AccBox.KeyDown
