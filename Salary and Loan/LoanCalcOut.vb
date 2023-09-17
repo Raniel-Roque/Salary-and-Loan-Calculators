@@ -4,13 +4,25 @@
     'BSIT 2A
     Dim Choose_Financial_Form As Choose_Financial
     Dim In_Financial_Form As LoanCalc
+    Function CustomFormat(value As Double) As String
+        If Math.Floor(value) = 0 Then
+            ' Display as 0.XX when the whole number part is less than 1
+            Return Format(value, "₱0.00")
+        Else
+            ' Display as XX.XX for other values
+            Return Format(value, "₱#,##.00")
+        End If
+    End Function
+
     'Previous Form
     Private Sub HomeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HomeToolStripMenuItem.Click
         ' Confirmation dialog
         ' Placeholder for Compilation Project
+        ' LRN += 1 for next LRN even if going home
         Dim result As DialogResult = MessageBox.Show("Are you sure you want to go back to main menu?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
 
         If result = DialogResult.Yes Then
+            GlobalData.LRN += 1
             If Choose_Financial_Form Is Nothing Then
                 Choose_Financial_Form = New Choose_Financial
             End If
@@ -23,25 +35,36 @@
         AccBox.Text = GlobalData.AccNum
         NameBox.Text = GlobalData.Name
         AddressBox.Text = GlobalData.Address
-        LoanBox.Text = Format(GlobalData.Loan, "₱#,##.00")
-        RateBox.Text = (GlobalData.Rate.ToString()) + "%"
+        LoanBox.Text = CustomFormat(GlobalData.Loan)
+        If GlobalData.Rate < 0 Then
+            RateBox.Text = "0" + GlobalData.Rate.ToString() + "%"
+        Else
+            RateBox.Text = (GlobalData.Rate.ToString()) + "%"
+        End If
         YearBox.Text = GlobalData.Year
+        ' Loads Global Data Info to corresponding TextBs
+        ' YearlyInterestValue for readability 
 
         Dim YearlyInterestValue As Double = GlobalData.Loan * (GlobalData.Rate / 100)
 
-        MonthPay.Text = Format(YearlyInterestValue / 12, "₱#,##.00")
-        TotalInterest.Text = Format(YearlyInterestValue * GlobalData.Year, "₱#,##.00")
-        AnnualPay.Text = Format(YearlyInterestValue, "₱#,##.00")
-        LoanPay.Text = Format(GlobalData.Loan + (YearlyInterestValue * GlobalData.Year), "₱#,##.00")
+        MonthPay.Text = CustomFormat(YearlyInterestValue / 12)
+        TotalInterest.Text = CustomFormat(YearlyInterestValue * GlobalData.Year)
+        AnnualPay.Text = CustomFormat(YearlyInterestValue)
+        LoanPay.Text = CustomFormat(GlobalData.Loan + (YearlyInterestValue * GlobalData.Year))
 
     End Sub
 
     Private Sub Back_Click(sender As Object, e As EventArgs) Handles Back.Click
-        GlobalData.LRN += 1
-        If In_Financial_Form Is Nothing Then
-            In_Financial_Form = New LoanCalc
+        ' Confirmation dialog (LRN +1 for Global Data LRN)
+        Dim result As DialogResult = MessageBox.Show("Calculate new loan?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+
+        If result = DialogResult.Yes Then
+            GlobalData.LRN += 1
+            If In_Financial_Form Is Nothing Then
+                In_Financial_Form = New LoanCalc
+            End If
+            In_Financial_Form.Show()
+            Me.Close()
         End If
-        In_Financial_Form.Show()
-        Me.Close()
     End Sub
 End Class
