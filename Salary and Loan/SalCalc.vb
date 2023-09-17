@@ -1,8 +1,7 @@
 ﻿Imports System.Reflection.Emit
-
 Public Class SalCalc
     'Programmer: Roque, Raniel Christian B
-    'Date: September 16 2023
+    'Date: September 17 2023
     'BSIT 2A
     Dim Choose_Financial_Form As Choose_Financial
     Dim SalCalcOut_Form As SalCalcOut
@@ -122,6 +121,7 @@ Public Class SalCalc
             Me.Close()
         End If
     End Sub
+    'Key Presses
     Private Sub NameBox_KeyDown(sender As Object, e As KeyEventArgs) Handles NameBox.KeyDown
         If e.KeyCode = Keys.Enter OrElse e.KeyCode = Keys.Down Then
             DeptBox.Focus()

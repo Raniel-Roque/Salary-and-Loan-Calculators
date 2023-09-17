@@ -1,4 +1,7 @@
 ﻿Public Class SalCalcOut2
+    'Programmer: Roque, Raniel Christian B
+    'Date: September 17 2023
+    'BSIT 2A
     Dim Choose_Financial_Form As Choose_Financial
     Dim SalCalcIn_Form As SalCalc
     Dim SalCalcOut_Form As SalCalcOut

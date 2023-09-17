@@ -1,6 +1,9 @@
 ﻿Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 
 Public Class SalCalcOut
+    'Programmer: Roque, Raniel Christian B
+    'Date: September 17 2023
+    'BSIT 2A
     Dim Choose_Financial_Form As Choose_Financial
     Dim SalCalcIn_Form As SalCalc
     Dim SalCalcOut2_Form As SalCalcOut2
@@ -38,7 +41,7 @@ Public Class SalCalcOut
             Me.Close()
         End If
     End Sub
-
+    'New 
     Private Sub NewForm_Click(sender As Object, e As EventArgs) Handles NewForm.Click
         ' Confirmation dialog
         Dim result As DialogResult = MessageBox.Show("Calculate new salary details?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
@@ -51,7 +54,7 @@ Public Class SalCalcOut
             Me.Close()
         End If
     End Sub
-
+    'Next Button
     Private Sub NextButt_Click(sender As Object, e As EventArgs) Handles NextButt.Click
         If SalCalcOut2_Form Is Nothing Then
             SalCalcOut2_Form = New SalCalcOut2
@@ -59,7 +62,7 @@ Public Class SalCalcOut
         SalCalcOut2_Form.Show()
         Me.Close()
     End Sub
-
+    'Full View Button
     Private Sub FView_Click(sender As Object, e As EventArgs) Handles FView.Click
         If SalCalcOutFull_Form Is Nothing Then
             SalCalcOutFull_Form = New SalCalcOutFull
