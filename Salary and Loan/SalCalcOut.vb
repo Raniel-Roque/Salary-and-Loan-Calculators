@@ -4,6 +4,7 @@ Public Class SalCalcOut
     Dim Choose_Financial_Form As Choose_Financial
     Dim SalCalcIn_Form As SalCalc
     Dim SalCalcOut2_Form As SalCalcOut2
+    Dim SalCalcOutFull_Form As SalCalcOutFull
     Function CustomFormat(value As Double) As String
         If Math.Floor(value) = 0 Then
             ' Display as 0.XX when the whole number part is less than 1
@@ -56,6 +57,14 @@ Public Class SalCalcOut
             SalCalcOut2_Form = New SalCalcOut2
         End If
         SalCalcOut2_Form.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub FView_Click(sender As Object, e As EventArgs) Handles FView.Click
+        If SalCalcOutFull_Form Is Nothing Then
+            SalCalcOutFull_Form = New SalCalcOutFull
+        End If
+        SalCalcOutFull_Form.Show()
         Me.Close()
     End Sub
 End Class

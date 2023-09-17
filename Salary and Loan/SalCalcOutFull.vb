@@ -1,8 +1,7 @@
-﻿Public Class SalCalcOut2
+﻿Public Class SalCalcOutFull
     Dim Choose_Financial_Form As Choose_Financial
     Dim SalCalcIn_Form As SalCalc
     Dim SalCalcOut_Form As SalCalcOut
-    Dim SalCalcOutFull_Form As SalCalcOutFull
     Function CustomFormat(value As Double) As String
         If Math.Floor(value) = 0 Then
             ' Display as 0.XX when the whole number part is less than 1
@@ -12,6 +11,24 @@
             Return Format(value, "₱#,##.00")
         End If
     End Function
+    Private Sub SalCalcOutFull_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        NetBox.Focus()
+        NameBox.Text = GlobalData.Name
+        DeptBox.Text = GlobalData.Dept
+        WHBox.Text = GlobalData.WHours
+        RegRateBox.Text = CustomFormat(GlobalData.RegRate) + "/h"
+        OverBox.Text = GlobalData.OverTime
+        OverRateBox.Text = CustomFormat(GlobalData.OverRate) + "/h"
+        Dim GSalary As Double = (GlobalData.WHours * GlobalData.RegRate) + (GlobalData.OverTime * GlobalData.OverRate)
+        GSalaryBox.Text = CustomFormat(GSalary)
+        SSSBox.Text = CustomFormat(GSalary * 0.05)
+        PHBox.Text = "₱150.00"
+        PIBox.Text = CustomFormat(GSalary * 0.03)
+        IncomeTaxBox.Text = CustomFormat(GSalary * 0.08)
+        DeductionBox.Text = CustomFormat((GSalary * 0.05) + 150 + (GSalary * 0.03) + (GSalary * 0.08))
+        NetBox.Text = CustomFormat(GSalary - ((GSalary * 0.05) + 150 + (GSalary * 0.03) + (GSalary * 0.08)))
+    End Sub
+
     Private Sub HomeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HomeToolStripMenuItem.Click
         ' Confirmation dialog
         ' Placeholder for Compilation Project
@@ -24,13 +41,6 @@
             Choose_Financial_Form.Show()
             Me.Close()
         End If
-    End Sub
-    Private Sub Back_Click(sender As Object, e As EventArgs) Handles Back.Click
-        If SalCalcOut_Form Is Nothing Then
-            SalCalcOut_Form = New SalCalcOut
-        End If
-        SalCalcOut_Form.Show()
-        Me.Close()
     End Sub
 
     Private Sub NewForm_Click(sender As Object, e As EventArgs) Handles NewForm.Click
@@ -46,22 +56,11 @@
         End If
     End Sub
 
-    Private Sub SalCalcOut2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        NetBox.Focus()
-        Dim GSalary As Double = (GlobalData.WHours * GlobalData.RegRate) + (GlobalData.OverTime * GlobalData.OverRate)
-        SSSBox.Text = CustomFormat(GSalary * 0.05)
-        PHBox.Text = "₱150.00"
-        PIBox.Text = CustomFormat(GSalary * 0.03)
-        IncomeTaxBox.Text = CustomFormat(GSalary * 0.08)
-        DeductionBox.Text = CustomFormat((GSalary * 0.05) + 150 + (GSalary * 0.03) + (GSalary * 0.08))
-        NetBox.Text = CustomFormat(GSalary - ((GSalary * 0.05) + 150 + (GSalary * 0.03) + (GSalary * 0.08)))
-    End Sub
-
     Private Sub FView_Click(sender As Object, e As EventArgs) Handles FView.Click
-        If SalCalcOutFull_Form Is Nothing Then
-            SalCalcOutFull_Form = New SalCalcOutFull
+        If SalCalcOut_Form Is Nothing Then
+            SalCalcOut_Form = New SalCalcOut
         End If
-        SalCalcOutFull_Form.Show()
+        SalCalcOut_Form.Show()
         Me.Close()
     End Sub
 End Class

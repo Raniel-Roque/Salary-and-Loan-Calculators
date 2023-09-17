@@ -107,7 +107,7 @@ Partial Class SalCalcOut2
         Me.DeductionBox.BackColor = System.Drawing.SystemColors.Control
         Me.DeductionBox.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DeductionBox.Font = New System.Drawing.Font("Arial", 14.0!)
-        Me.DeductionBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.DeductionBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(67, Byte), Integer))
         Me.DeductionBox.Location = New System.Drawing.Point(168, 213)
         Me.DeductionBox.Margin = New System.Windows.Forms.Padding(3, 3, 3, 5)
         Me.DeductionBox.Name = "DeductionBox"
@@ -121,7 +121,7 @@ Partial Class SalCalcOut2
         Me.IncomeTaxBox.BackColor = System.Drawing.SystemColors.Control
         Me.IncomeTaxBox.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.IncomeTaxBox.Font = New System.Drawing.Font("Arial", 14.0!)
-        Me.IncomeTaxBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.IncomeTaxBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(67, Byte), Integer))
         Me.IncomeTaxBox.Location = New System.Drawing.Point(168, 183)
         Me.IncomeTaxBox.Margin = New System.Windows.Forms.Padding(3, 3, 3, 5)
         Me.IncomeTaxBox.Name = "IncomeTaxBox"
@@ -135,7 +135,7 @@ Partial Class SalCalcOut2
         Me.PIBox.BackColor = System.Drawing.SystemColors.Control
         Me.PIBox.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.PIBox.Font = New System.Drawing.Font("Arial", 14.0!)
-        Me.PIBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.PIBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(67, Byte), Integer))
         Me.PIBox.Location = New System.Drawing.Point(168, 153)
         Me.PIBox.Margin = New System.Windows.Forms.Padding(3, 3, 3, 5)
         Me.PIBox.Name = "PIBox"
@@ -150,7 +150,7 @@ Partial Class SalCalcOut2
         Me.PHBox.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.PHBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.PHBox.Font = New System.Drawing.Font("Arial", 14.0!)
-        Me.PHBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.PHBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(67, Byte), Integer))
         Me.PHBox.Location = New System.Drawing.Point(168, 123)
         Me.PHBox.Margin = New System.Windows.Forms.Padding(3, 3, 3, 5)
         Me.PHBox.Name = "PHBox"
@@ -165,7 +165,7 @@ Partial Class SalCalcOut2
         Me.SSSBox.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.SSSBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.SSSBox.Font = New System.Drawing.Font("Arial", 14.0!)
-        Me.SSSBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.SSSBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(67, Byte), Integer))
         Me.SSSBox.Location = New System.Drawing.Point(168, 93)
         Me.SSSBox.Margin = New System.Windows.Forms.Padding(3, 3, 3, 5)
         Me.SSSBox.Name = "SSSBox"
