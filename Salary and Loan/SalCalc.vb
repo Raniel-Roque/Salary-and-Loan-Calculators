@@ -122,4 +122,61 @@ Public Class SalCalc
             Me.Close()
         End If
     End Sub
+    Private Sub NameBox_KeyDown(sender As Object, e As KeyEventArgs) Handles NameBox.KeyDown
+        If e.KeyCode = Keys.Enter OrElse e.KeyCode = Keys.Down Then
+            DeptBox.Focus()
+            e.SuppressKeyPress = True
+        ElseIf e.KeyCode = Keys.Up Then
+            e.SuppressKeyPress = True
+        End If
+    End Sub
+
+    Private Sub DeptBox_KeyDown(sender As Object, e As KeyEventArgs) Handles DeptBox.KeyDown
+        If e.KeyCode = Keys.Enter OrElse e.KeyCode = Keys.Down Then
+            WHBox.Focus()
+            e.SuppressKeyPress = True
+        ElseIf e.KeyCode = Keys.Up Then
+            NameBox.Focus()
+            e.SuppressKeyPress = True
+        End If
+    End Sub
+    Private Sub WHBox_KeyDown(sender As Object, e As KeyEventArgs) Handles WHBox.KeyDown
+        If e.KeyCode = Keys.Enter OrElse e.KeyCode = Keys.Down Then
+            RegRateBox.Focus()
+            e.SuppressKeyPress = True
+        ElseIf e.KeyCode = Keys.Up Then
+            DeptBox.Focus()
+            e.SuppressKeyPress = True
+        End If
+    End Sub
+
+    Private Sub RegRateBox_KeyDown(sender As Object, e As KeyEventArgs) Handles RegRateBox.KeyDown
+        If e.KeyCode = Keys.Enter OrElse e.KeyCode = Keys.Down Then
+            OverBox.Focus()
+            e.SuppressKeyPress = True
+        ElseIf e.KeyCode = Keys.Up Then
+            WHBox.Focus()
+            e.SuppressKeyPress = True
+        End If
+    End Sub
+
+    Private Sub OverBox_KeyDown(sender As Object, e As KeyEventArgs) Handles OverBox.KeyDown
+        If e.KeyCode = Keys.Enter OrElse e.KeyCode = Keys.Down Then
+            OverRateBox.Focus()
+            e.SuppressKeyPress = True
+        ElseIf e.KeyCode = Keys.Up Then
+            RegRateBox.Focus()
+            e.SuppressKeyPress = True
+        End If
+    End Sub
+
+    Private Sub OverRateBox_KeyDown(sender As Object, e As KeyEventArgs) Handles OverRateBox.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Compute.PerformClick()
+            e.SuppressKeyPress = True
+        ElseIf e.KeyCode = Keys.Up Then
+            OverBox.Focus()
+            e.SuppressKeyPress = True
+        End If
+    End Sub
 End Class

@@ -230,7 +230,7 @@ Partial Class SalCalc
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(2, Byte), Integer), CType(CType(170, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(384, 287)
+        Me.ClientSize = New System.Drawing.Size(384, 279)
         Me.Controls.Add(Me.OverRateBox)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Compute)

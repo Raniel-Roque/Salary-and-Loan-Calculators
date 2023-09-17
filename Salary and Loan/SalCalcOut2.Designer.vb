@@ -250,9 +250,9 @@ Partial Class SalCalcOut2
         Me.FView.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Linen
         Me.FView.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.FView.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.FView.Location = New System.Drawing.Point(116, 279)
+        Me.FView.Location = New System.Drawing.Point(16, 279)
         Me.FView.Name = "FView"
-        Me.FView.Size = New System.Drawing.Size(151, 36)
+        Me.FView.Size = New System.Drawing.Size(146, 36)
         Me.FView.TabIndex = 75
         Me.FView.Text = "Full View"
         Me.FView.UseVisualStyleBackColor = False
@@ -266,9 +266,9 @@ Partial Class SalCalcOut2
         Me.NewForm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(139, Byte), Integer), CType(CType(179, Byte), Integer), CType(CType(211, Byte), Integer))
         Me.NewForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.NewForm.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NewForm.Location = New System.Drawing.Point(16, 279)
+        Me.NewForm.Location = New System.Drawing.Point(168, 279)
         Me.NewForm.Name = "NewForm"
-        Me.NewForm.Size = New System.Drawing.Size(94, 36)
+        Me.NewForm.Size = New System.Drawing.Size(98, 36)
         Me.NewForm.TabIndex = 74
         Me.NewForm.Text = "New"
         Me.NewForm.UseVisualStyleBackColor = False
@@ -282,9 +282,9 @@ Partial Class SalCalcOut2
         Me.Back.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Back.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Back.Location = New System.Drawing.Point(273, 279)
+        Me.Back.Location = New System.Drawing.Point(272, 279)
         Me.Back.Name = "Back"
-        Me.Back.Size = New System.Drawing.Size(97, 36)
+        Me.Back.Size = New System.Drawing.Size(98, 36)
         Me.Back.TabIndex = 73
         Me.Back.Text = "Back"
         Me.Back.UseVisualStyleBackColor = False

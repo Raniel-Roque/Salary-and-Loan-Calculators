@@ -212,9 +212,9 @@ Partial Class SalCalcOut
         Me.NextButt.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.NextButt.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.NextButt.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NextButt.Location = New System.Drawing.Point(276, 296)
+        Me.NextButt.Location = New System.Drawing.Point(272, 300)
         Me.NextButt.Name = "NextButt"
-        Me.NextButt.Size = New System.Drawing.Size(94, 36)
+        Me.NextButt.Size = New System.Drawing.Size(98, 36)
         Me.NextButt.TabIndex = 49
         Me.NextButt.Text = "Next"
         Me.NextButt.UseVisualStyleBackColor = False
@@ -239,9 +239,9 @@ Partial Class SalCalcOut
         Me.FView.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Linen
         Me.FView.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.FView.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.FView.Location = New System.Drawing.Point(119, 296)
+        Me.FView.Location = New System.Drawing.Point(16, 300)
         Me.FView.Name = "FView"
-        Me.FView.Size = New System.Drawing.Size(151, 36)
+        Me.FView.Size = New System.Drawing.Size(146, 36)
         Me.FView.TabIndex = 68
         Me.FView.Text = "Full View"
         Me.FView.UseVisualStyleBackColor = False
@@ -255,9 +255,9 @@ Partial Class SalCalcOut
         Me.NewForm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(139, Byte), Integer), CType(CType(179, Byte), Integer), CType(CType(211, Byte), Integer))
         Me.NewForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.NewForm.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NewForm.Location = New System.Drawing.Point(19, 296)
+        Me.NewForm.Location = New System.Drawing.Point(168, 300)
         Me.NewForm.Name = "NewForm"
-        Me.NewForm.Size = New System.Drawing.Size(94, 36)
+        Me.NewForm.Size = New System.Drawing.Size(98, 36)
         Me.NewForm.TabIndex = 75
         Me.NewForm.Text = "New"
         Me.NewForm.UseVisualStyleBackColor = False
@@ -292,7 +292,7 @@ Partial Class SalCalcOut
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(2, Byte), Integer), CType(CType(170, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(387, 341)
+        Me.ClientSize = New System.Drawing.Size(387, 349)
         Me.Controls.Add(Me.GSalaryBox)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.NewForm)

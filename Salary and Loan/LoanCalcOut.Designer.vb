@@ -235,18 +235,18 @@ Partial Class LoanCalcOut
         '
         'Back
         '
-        Me.Back.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Back.BackColor = System.Drawing.Color.FromArgb(CType(CType(139, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(211, Byte), Integer))
         Me.Back.FlatAppearance.BorderColor = System.Drawing.Color.Black
         Me.Back.FlatAppearance.BorderSize = 2
-        Me.Back.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Back.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Back.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(139, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.Back.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(139, Byte), Integer), CType(CType(179, Byte), Integer), CType(CType(211, Byte), Integer))
         Me.Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Back.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Back.Location = New System.Drawing.Point(18, 422)
         Me.Back.Name = "Back"
         Me.Back.Size = New System.Drawing.Size(403, 36)
         Me.Back.TabIndex = 31
-        Me.Back.Text = "Back"
+        Me.Back.Text = "New"
         Me.Back.UseVisualStyleBackColor = False
         '
         'MonthPay
