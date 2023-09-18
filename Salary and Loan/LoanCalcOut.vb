@@ -45,12 +45,12 @@
         ' Loads Global Data Info to corresponding TextBs
         ' YearlyInterestValue for readability 
 
-        Dim YearlyInterestValue As Double = GlobalData.Loan * (GlobalData.Rate / 100)
+        Dim YearlyInterestValue As Double = GlobalData.Loan * (GlobalData.Rate / 100) * GlobalData.Year
 
-        MonthPay.Text = CustomFormat(YearlyInterestValue / 12)
-        TotalInterest.Text = CustomFormat(YearlyInterestValue * GlobalData.Year)
-        AnnualPay.Text = CustomFormat(YearlyInterestValue)
-        LoanPay.Text = CustomFormat(GlobalData.Loan + (YearlyInterestValue * GlobalData.Year))
+        MonthPay.Text = CustomFormat(((GlobalData.Loan + YearlyInterestValue) / GlobalData.Year) / 12)
+        TotalInterest.Text = CustomFormat(YearlyInterestValue)
+        AnnualPay.Text = CustomFormat((GlobalData.Loan + YearlyInterestValue) / GlobalData.Year)
+        LoanPay.Text = CustomFormat(GlobalData.Loan + YearlyInterestValue)
 
     End Sub
 
