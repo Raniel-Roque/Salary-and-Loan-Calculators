@@ -8,7 +8,7 @@
     'Sets initial value of LRN and Focuses on Namebox
     Private Sub LoanCalc_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LRNBox.Text = String.Format("{0:D5}", GlobalData.LRN)
-        AccBox.Focus()
+        TextBox1.Focus()
     End Sub
 
     'Previous Form

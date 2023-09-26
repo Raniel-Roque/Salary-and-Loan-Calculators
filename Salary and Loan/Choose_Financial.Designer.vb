@@ -29,6 +29,7 @@ Partial Class Choose_Financial
         Me.Label2 = New System.Windows.Forms.Label()
         Me.LoanButt = New System.Windows.Forms.Button()
         Me.SalButt = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -40,7 +41,7 @@ Partial Class Choose_Financial
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(6)
-        Me.MenuStrip1.Size = New System.Drawing.Size(286, 32)
+        Me.MenuStrip1.Size = New System.Drawing.Size(290, 32)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -102,19 +103,27 @@ Partial Class Choose_Financial
         Me.SalButt.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(225, Byte), Integer), CType(CType(155, Byte), Integer))
         Me.SalButt.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(218, Byte), Integer), CType(CType(80, Byte), Integer))
         Me.SalButt.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.SalButt.Image = CType(resources.GetObject("SalButt.Image"), System.Drawing.Image)
+        Me.SalButt.Image = Global.Salary_and_Loan.My.Resources.Resources.SalaryPNG
         Me.SalButt.Location = New System.Drawing.Point(161, 76)
         Me.SalButt.Name = "SalButt"
         Me.SalButt.Size = New System.Drawing.Size(110, 110)
         Me.SalButt.TabIndex = 7
         Me.SalButt.UseVisualStyleBackColor = False
         '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(349, 181)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(25, 20)
+        Me.TextBox1.TabIndex = 1
+        '
         'Choose_Financial
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(2, Byte), Integer), CType(CType(170, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(286, 204)
+        Me.ClientSize = New System.Drawing.Size(290, 204)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.LoanButt)
         Me.Controls.Add(Me.SalButt)
         Me.Controls.Add(Me.Label2)
@@ -137,4 +146,5 @@ Partial Class Choose_Financial
     Friend WithEvents Label2 As Label
     Friend WithEvents SalButt As Button
     Friend WithEvents LoanButt As Button
+    Friend WithEvents TextBox1 As TextBox
 End Class
