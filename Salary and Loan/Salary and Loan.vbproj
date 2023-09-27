@@ -190,5 +190,14 @@
   <ItemGroup>
     <None Include="Resources\cash+coin+dollar+money+payment+icon-1320185632929992472.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoanPNG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SalaryPNG.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
